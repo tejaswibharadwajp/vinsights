@@ -1,3 +1,15 @@
 .rs-sidenav-body {
     height: 93vh;
 }
+
+.patientRecordTable {
+    height: 90vh;
+}
+
+.pageHeader {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: left;
+    color: gray;
+    padding: 20px;
+}

@@ -7,7 +7,6 @@
 .loginLeftContainer {
     padding-top: 38vh;
     color: #5fb6cd;
-    background: #dcdcdc;
     width: 50vw;
     background-size: cover;
     background-position-x: center;
@@ -17,7 +16,7 @@
     padding-top: 38vh;
     width: 50vw;
     background-size: cover;
-    background-image: url("leftBackground.jpeg");
+    background-image: url("vSights.jpeg");
     background-repeat: no-repeat;
     background-position-x: -18vw;
 
@@ -30,6 +29,7 @@
 
 .loginPanel {
     width: 20vw;
+    background: #FFFFFF;
 }
 
 .inputContainer {

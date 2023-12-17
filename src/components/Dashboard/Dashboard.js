@@ -42,6 +42,7 @@ function Dashboard() {
 
                     </Col>
                     <Col className="chartsPanel" xs={20}>
+                        <div className={'pageHeader'}>Dashboard</div>
                         <Row>
                             <Col xs={8}>
                                 <div className="analyticsBox1">

@@ -54,7 +54,8 @@ function PatientRecordsPage() {
 
                     </Col>
                     <Col className="" xs={20}>
-                        <Table height={420} data={data}>
+                        <div className={'pageHeader'}>Patients Details</div>
+                        <Table height={720} data={data}>
                             <Column width={50} align="center" fixed>
                                 <HeaderCell>Id</HeaderCell>
                                 <Cell dataKey="id" />
