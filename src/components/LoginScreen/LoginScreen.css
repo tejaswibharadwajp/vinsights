@@ -1,0 +1,88 @@
+
+.loginContainer {
+    display: flex;
+    height: 100vh;
+}
+
+.loginLeftContainer {
+    padding-top: 38vh;
+    color: #5fb6cd;
+    background: #dcdcdc;
+    width: 50vw;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.loginRightContainer {
+    padding-top: 38vh;
+    width: 50vw;
+    background-size: cover;
+    background-image: url("leftBackground.jpeg");
+    background-repeat: no-repeat;
+    background-position-x: -18vw;
+
+}
+
+.loginRightPanelContainer {
+    margin: auto 0;
+    text-align: -webkit-center;
+}
+
+.loginPanel {
+    width: 20vw;
+}
+
+.inputContainer {
+    margin: 20px;
+    width: 15vw;
+}
+
+.fontV {
+    font-family: monospace;
+    font-size: 84px;
+    font-style: italic;
+}
+
+.projectFont {
+    font-family: "Times New Roman";
+    font-size: 72px;
+}
+
+.analyticsBox1 {
+    border-radius: 5px;
+    margin-right: 10px;
+    background: linear-gradient(87deg, #11cdef 0, #1171ef 100%);
+}
+
+.analyticsBox2 {
+    border-radius: 5px;
+    margin-right: 10px;
+    background: linear-gradient(87deg, #f5365c 0, #f56036 100%);
+}
+
+.analyticsBox3 {
+    border-radius: 5px;
+    background: linear-gradient(87deg, #2dce89 0, #2dcecc 100%);
+}
+
+.panelCard {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: monospace;
+    color: #FFFFFF;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.panelCardValue {
+    font-family: monospace;
+    color: #FFFFFF;
+    font-size: 32px;
+    text-align: right;
+    height: 60px;
+}
+
+
+.chartsPanel {
+    margin-top: 20px;
+}
