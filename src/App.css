@@ -41,3 +41,16 @@
 .rs-sidenav-item {
   text-align: left;
 }
+
+.headerImage {
+  width: 140px;
+  display: flex;
+  justify-content: left;
+  padding: 5px;
+  cursor: pointer;
+;
+}
+
+.headerContainer {
+  background: #131313;
+}

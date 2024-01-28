@@ -5,6 +5,9 @@ import DashboardIcon from '@rsuite/icons/legacy/Dashboard';
 import GroupIcon from '@rsuite/icons/legacy/Group';
 import GearCircleIcon from '@rsuite/icons/legacy/GearCircle';
 import { mockUsers } from './mock';
+import { createBrowserHistory } from 'history';
+
+
 const defaultData = mockUsers(100);
 
 function PatientRecordsPage() {
@@ -12,7 +15,9 @@ function PatientRecordsPage() {
     const [activeKey, setActiveKey] = React.useState('1');
     const [limit, setLimit] = React.useState(50);
     const [page, setPage] = React.useState(1);
+    const [pageChanged, setPageChanged] = React.useState(false);
     const { Column, HeaderCell, Cell } = Table;
+    const history = createBrowserHistory();
     const handleChangeLimit = dataKey => {
         setPage(1);
         setLimit(dataKey);
@@ -27,35 +32,11 @@ function PatientRecordsPage() {
         <div className="">
             <Grid fluid>
                 <Row>
-                    <Col>
-                        <Sidenav expanded={expanded} defaultOpenKeys={['3', '4']}>
-                            <Sidenav.Body>
-                                <Nav activeKey={activeKey} onSelect={setActiveKey}>
-                                    <Nav.Item eventKey="1" icon={<DashboardIcon /> } href={'/home'}>
-                                        Dashboard
-                                    </Nav.Item>
-                                    <Nav.Item eventKey="2" icon={<GroupIcon />} href={'/patientrecords'}>
-                                        Patient Records
-                                    </Nav.Item>
-                                    <Nav.Menu
-                                        placement="rightStart"
-                                        eventKey="4"
-                                        title="Settings"
-                                        icon={<GearCircleIcon />}
-                                    >
-                                        <Nav.Item eventKey="4-1">Applications</Nav.Item>
-                                        <Nav.Item eventKey="4-2">Channels</Nav.Item>
-                                        <Nav.Item eventKey="4-3">Versions</Nav.Item>
-                                    </Nav.Menu>
-                                </Nav>
-                            </Sidenav.Body>
-                            <Sidenav.Toggle expanded={expanded} onToggle={expanded => setExpanded(expanded)} />
-                        </Sidenav>
-
-                    </Col>
                     <Col className="" xs={20}>
                         <div className={'pageHeader'}>Patients Details</div>
-                        <Table height={720} data={data}>
+                        <Table onRowClick={() => {
+                            window.location.replace('/patientDetails');
+                        }} height={720} data={data}>
                             <Column width={50} align="center" fixed>
                                 <HeaderCell>Id</HeaderCell>
                                 <Cell dataKey="id" />
