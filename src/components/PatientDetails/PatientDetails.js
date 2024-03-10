@@ -57,8 +57,8 @@ function PatientDetails(props) {
             </Col>
             <Col xs={20}>
                 <div className={'patientDetailHeaderContainer'}>
-                    <div className={'pageHeader'}>Patient 360 &#176; View</div>
-                     <div style={{margin:'0px'}}>   <Button onClick={() => setShowAll(!showAll)}>Toggle Tiles</Button></div>
+                    <div className={'pageHeader'}>Patient 360&#176; View</div>
+                     <div style={{margin:'25px'}}>   <Button onClick={() => setShowAll(!showAll)}>Toggle Tiles</Button></div>
                     </div>
             <Row className="gridContainer">
                 <Col lg={8}>

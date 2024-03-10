@@ -19,7 +19,7 @@ function LoginScreen() {
         <div className="loginContainer">
             <div className="loginLeftContainer">
                 <div><span className={"fontV"}>v</span><span className={"projectFont"}>Sights</span></div>
-                <div>Welcome to vights Al based analytical Software gives 360 degree view of member-level revenues and claims details to Physician group to improve financial performance of risk, shared savings and incentive contracts.</div>
+                <div>Welcome to vights Al based analytical Software gives 360&#176; view of member-level revenues and claims details to Physician group to improve financial performance of risk, shared savings and incentive contracts.</div>
             </div>
             <div className={"loginRightContainer"}>
                 <div className={'loginRightPanelContainer'}>

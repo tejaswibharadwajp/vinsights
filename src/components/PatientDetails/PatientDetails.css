@@ -43,10 +43,12 @@
 }
 
 .flip-card-front {
-    background-image: url('./tileBackground.png');
+    /*background-image: url('./tileBackground.png');*/
+    background-image: linear-gradient(to right, lightblue, royalblue);
     background-size: cover;
     background-repeat: no-repeat;
     color: black;
+    font-weight: 500;
     font-size: 22px;
     padding: 68px 0;
 }

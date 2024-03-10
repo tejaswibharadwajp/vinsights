@@ -10,10 +10,14 @@ import logoImage from './icons/logo.png';
 function App() {
   return (
     <div className="App">
-        {!(window.location.pathname === '/' || window.location.pathname === '/login') &&
+
             <div className={'headerContainer'}>
-                <img onClick={() => {window.location.replace('/home')}} className={'headerImage'} src={logoImage}/>
-            </div>}
+                <img onClick={() => {
+                    if(!(window.location.pathname === '/' || window.location.pathname === '/login')) {
+                    window.location.replace('/home');
+                    }
+                }} className={'headerImage'} src={logoImage}/>
+            </div>
         <Router>
             <Switch>
                 <Route path={"/"} exact={true} component={LoginScreen} />
